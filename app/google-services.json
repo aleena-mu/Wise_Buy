@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "47816181169",
+    "project_id": "wise-buy-app",
+    "storage_bucket": "wise-buy-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:47816181169:android:d0251fc09d0dc69dc16990",
+        "android_client_info": {
+          "package_name": "com.example.wisebuy"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCO5mjYlrj29eAKSYKyLYyRMfw0quOw288"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

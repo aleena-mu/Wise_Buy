@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.home.HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+       <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="WiseBuy"
+           android:textStyle="bold"
+           android:textSize="20sp"
+           android:layout_marginTop="15dp"
+           android:textColor="@color/colorPrimary"
+           android:layout_marginStart="5dp"/>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/categoryView"
+        android:layout_width="match_parent"
+        android:layout_height="92dp"
+        android:layout_marginTop="30dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="558dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:orientation="vertical">
+
+            <com.smarteist.autoimageslider.SliderView
+                android:id="@+id/imageSlider"
+                android:layout_width="match_parent"
+                android:layout_height="192dp"
+                android:layout_marginTop="10dp"
+                android:nestedScrollingEnabled="false"
+                app:sliderAnimationDuration="600"
+                app:sliderAutoCycleDirection="back_and_forth"
+                app:sliderAutoCycleEnabled="true"
+                app:sliderIndicatorAnimationDuration="600"
+                app:sliderIndicatorGravity="center_horizontal|bottom"
+                app:sliderIndicatorMargin="15dp"
+                app:sliderIndicatorOrientation="horizontal"
+                app:sliderIndicatorPadding="3dp"
+                app:sliderIndicatorRadius="2dp"
+                app:sliderIndicatorSelectedColor="@color/colorPrimary"
+                app:sliderIndicatorUnselectedColor="#FFFFFF"
+                app:sliderScrollTimeInSec="1"
+                app:sliderStartAutoCycle="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+
+                android:paddingHorizontal="10dp"
+                android:text="@string/top_deals"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp"
+
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="209dp"
+                android:layout_marginTop="10dp"
+
+                android:background="@drawable/trending_background"
+                android:orientation="vertical">
+
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/topDealsView"
+                    android:layout_width="360dp"
+                    android:layout_height="176dp"
+                    android:nestedScrollingEnabled="false"
+                    android:orientation="horizontal" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+
+                android:paddingHorizontal="10dp"
+                android:text="@string/trending"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp"
+
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="587dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/topdealsbackground"
+                android:orientation="vertical">
+
+
+                <GridView
+                    android:id="@+id/trendingView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:numColumns="2" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

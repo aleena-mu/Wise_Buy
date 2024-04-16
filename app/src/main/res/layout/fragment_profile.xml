@@ -1,0 +1,330 @@
+<!-- fragment_profile.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/sigininlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="536dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/signInMessage"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/loginButton"
+                app:layout_constraintHorizontal_bias="0.231"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+            <Button
+                android:id="@+id/loginButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/login"
+                app:layout_constraintBottom_toBottomOf="@+id/textView6"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.869"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView6" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="@string/profile"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.041" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/profilelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/white_background">
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/hey"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.043"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/nameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="Aleena"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/textView7"
+            app:layout_constraintStart_toEndOf="@+id/textView7"
+            app:layout_constraintTop_toTopOf="@+id/textView7"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/actionLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+
+            android:background="@drawable/white_background"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView7"
+            app:layout_constraintVertical_bias="0.173">
+
+            <TextView
+                android:id="@+id/myOrdersText"
+                android:textColor="@color/colorPrimary"
+                style="@style/textStyleBold"
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:background="@drawable/search_bar"
+                android:backgroundTint="#A3B4DA"
+                android:gravity="center"
+                android:text="@string/orders"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/wishListText"
+                style="@style/textStyleBold"
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:textColor="@color/colorPrimary"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/search_bar"
+                android:backgroundTint="#ECCFD5"
+                android:gravity="center"
+                android:text="@string/wishlist"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/myOrdersText" />
+
+            <TextView
+                android:id="@+id/myProfileText"
+                style="@style/textStyleBold"
+                android:layout_width="match_parent"
+                android:textColor="@color/colorPrimary"
+                android:layout_height="62dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/search_bar"
+                android:backgroundTint="#F1E3CA"
+                android:gravity="center"
+                android:text="@string/edit_profile"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/wishListText" />
+
+            <TextView
+                android:id="@+id/connectWithUsText"
+                style="@style/textStyleBold"
+                 android:textColor="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/search_bar"
+                android:backgroundTint="#EAF3CA"
+                android:gravity="center"
+                android:text="CONNECT"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/myProfileText" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="50dp"
+                android:layout_height="33dp"
+                app:layout_constraintBottom_toBottomOf="@+id/myOrdersText"
+                app:layout_constraintEnd_toEndOf="@+id/myOrdersText"
+                app:layout_constraintHorizontal_bias="0.299"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.551"
+                app:srcCompat="@drawable/all_products_icon" />
+
+            <ImageView
+                android:id="@+id/myOrders"
+                android:layout_width="25dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="24dp"
+                android:src="@drawable/right_arrow"
+                app:layout_constraintBottom_toBottomOf="@+id/myOrdersText"
+                app:layout_constraintEnd_toEndOf="@+id/myOrdersText"
+                app:layout_constraintTop_toTopOf="@+id/myOrdersText" />
+
+            <ImageView
+                android:id="@+id/wishList"
+                android:layout_width="25dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="24dp"
+                android:src="@drawable/right_arrow"
+                app:layout_constraintBottom_toBottomOf="@+id/wishListText"
+                app:layout_constraintEnd_toEndOf="@+id/wishListText"
+                app:layout_constraintTop_toTopOf="@+id/wishListText" />
+
+            <ImageView
+                android:id="@+id/myProfile"
+                android:layout_width="25dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="24dp"
+                android:src="@drawable/right_arrow"
+                app:layout_constraintBottom_toBottomOf="@+id/myProfileText"
+                app:layout_constraintEnd_toEndOf="@+id/myProfileText"
+                app:layout_constraintTop_toTopOf="@+id/myProfileText" />
+
+            <ImageView
+                android:id="@+id/connectWithUs"
+                android:layout_width="25dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="24dp"
+                android:src="@drawable/right_arrow"
+                app:layout_constraintBottom_toBottomOf="@+id/connectWithUsText"
+                app:layout_constraintEnd_toEndOf="@+id/connectWithUsText"
+                app:layout_constraintTop_toTopOf="@+id/connectWithUsText" />
+
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="43dp"
+                android:layout_height="33dp"
+                app:layout_constraintBottom_toBottomOf="@+id/wishListText"
+                app:layout_constraintEnd_toEndOf="@+id/wishList"
+                app:layout_constraintHorizontal_bias="0.299"
+                app:layout_constraintStart_toStartOf="@+id/wishListText"
+                app:layout_constraintTop_toTopOf="@+id/wishListText"
+                app:srcCompat="@drawable/favourite" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="50dp"
+                android:layout_height="33dp"
+                app:layout_constraintBottom_toBottomOf="@+id/myProfileText"
+                app:layout_constraintEnd_toEndOf="@+id/myProfileText"
+                app:layout_constraintHorizontal_bias="0.299"
+                app:layout_constraintStart_toStartOf="@+id/myProfileText"
+                app:layout_constraintTop_toTopOf="@+id/myProfileText"
+                app:layout_constraintVertical_bias="0.513"
+                app:srcCompat="@drawable/profile_icon" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="50dp"
+                android:layout_height="33dp"
+                app:layout_constraintBottom_toBottomOf="@+id/connectWithUsText"
+                app:layout_constraintEnd_toEndOf="@+id/connectWithUsText"
+                app:layout_constraintHorizontal_bias="0.299"
+                app:layout_constraintStart_toStartOf="@+id/connectWithUsText"
+                app:layout_constraintTop_toTopOf="@+id/connectWithUsText"
+                app:layout_constraintVertical_bias="0.513"
+                app:srcCompat="@drawable/connection" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/logout"
+            android:layout_width="94dp"
+            android:layout_height="32dp"
+
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:onClick="onLogoutClick"
+            android:text="@string/log_0ut"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/actionLayout"
+            app:layout_constraintTop_toBottomOf="@+id/actionLayout" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ordersAndWishListLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="-8dp">
+
+            <TextView
+                android:id="@+id/headingText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/ordersAndWishListView"
+                android:layout_width="match_parent"
+                android:layout_height="676dp"
+                android:layout_marginTop="20dp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/noWishList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/wish_list_empty"
+            />
+            <TextView
+                android:id="@+id/cartIsEmptyText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/you_have_no_wishlist"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</RelativeLayout>

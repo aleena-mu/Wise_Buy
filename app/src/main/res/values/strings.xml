@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">Wise Buy</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="all_products">All Products</string>
+    <string name="profile">Profile</string>
+    <string name="sign_in_message">Sign in for the best experience</string>
+    <string name="continue_button">Continue</string>
+    <string name="asking_phone_num">Enter your phone number to continue</string>
+    <string name="user_name_hint">Username</string>
+    <string name="place_hint">Place</string>
+    <string name="asking_details">Let\'s Know More About You.</string>
+    <string name="welcome_text">Welcome New User!</string>
+    <string name="offer_10">UP TO 40% OFF</string>
+    <string name="sale_title">GRAB IT NOW SALE</string>
+    <string name="offer_products">On all HP printers</string>
+    <string name="login">Login</string>
+    <string name="signInMessage">Enjoy Wise Buy with all features</string>
+    <string name="currency_sign">RS.</string>
+    <string name="content_image_description">product_image</string>
+    <string name="cartButtonText">Add to cart</string>
+    <string name="trending">TRENDING</string>
+    <string name="hey">Hey!</string>
+    <string name="log_0ut">Log 0ut</string>
+    <string name="top_deals">TOP DEALS</string>
+    <string name="cart">Cart</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="my_cart">MY CART</string>
+    <string name="price_format">₹ %s</string>
+    <string name="orders">ORDERS</string>
+    <string name="wishlist">WISHLIST</string>
+    <string name="edit_profile">PROFILE</string>
+    <string name="my_orders">My Orders</string>
+    <string name="my_wishList">WishList</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="products">Products</string>
+    <string name="you_have_no_wishlist">YOU HAVE NO WISHLIST</string>
+    <string name="dell">DELL</string>
+    <string name="detailed_description">detailed description</string>
+    <string name="add_to_cart">Add To Cart</string>
+    <string name="wisebuy">WiseBuy</string>
+    <string name="delete">Delete</string>
+    <string name="order_now">ORDER NOW</string>
+    <string name="cash">Cash</string>
+    <string name="your_delivery_address">Your Delivery Address</string>
+    <string name="payment_method">Payment Method</string>
+    <string name="delivery_details">Delivery Details</string>
+    <string name="subtotal">Subtotal</string>
+
+</resources>
